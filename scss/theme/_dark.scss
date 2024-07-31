@@ -7,6 +7,9 @@ html.dark {
 
     --body-bg: #292e39;
     --header-bg-color: #171c28;
+    --footer-bg-color: var(--header-bg-color);
+    --footer-text-color: #9e9da4;
+
     --top-act-group-bg-color: #292e39;
     --top-act-group-shadow: rgba(0, 0, 0, 0.2);
     --top-act-group-separate: #ededf6;
@@ -34,9 +37,15 @@ html.dark {
 
     // Button
     --filter-btn-color: #fff;
-    --filter-btn-bg: #171C28;
+    --filter-btn-bg: #171c28;
 
     // Product card
-    --product-card-bg: #171C28;
-    --product-card-shadow: rgba(0, 0, 0, 0.20);
+    --product-card-bg: #171c28;
+    --product-card-shadow: rgba(0, 0, 0, 0.2);
+
+    // Filter form
+    --filter-form-bg: var(--dropdown-bg-color);
+    --filter-form-shadow: rgba(0, 0, 0, 0.4);
+    --filter-form-tag-bg: #171C28;
+    --filter-form-arrow: var(--dropdown-arrow-color);
 }

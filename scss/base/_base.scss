@@ -44,6 +44,10 @@ input {
     outline: none;
 }
 
+input {
+    background: transparent;
+}
+
 .icon {
     filter: var(--icon-color);
 }

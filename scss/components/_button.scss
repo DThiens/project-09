@@ -36,3 +36,47 @@
         margin-top: 6px;
     }
 }
+
+// Buttons
+.btn {
+    height: 46px;
+    padding: 0 20px;
+    border-radius: 6px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    background: #f8f8fb;
+
+    +.btn {
+        margin-left: 20px;
+    }
+
+    &--text {
+        color: #9E9DA8;
+        font-weight: 400;
+        background: transparent;
+    }
+
+    &--primary {
+        color: #1A162E;
+        background: #FFB700;
+    }
+
+    &--outline {
+        background: transparent;
+        border: 1px solid #D2D1D6;
+    }
+
+    &--rounded {
+        border-radius: 99px;
+    }
+    
+    &[disabled],
+    &--disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
