@@ -4,6 +4,7 @@
     margin-top: 50px;
     padding: 50px 0;
     background: var(--footer-bg-color);
+    font-size: 1.4rem;
 
     &__row {
         display: grid;
@@ -23,7 +24,6 @@
 
     &__desc {
         margin-top: 30px;
-        font-size: 1.5rem;
         line-height: 1.5;
 
         @include abstracts.screen(lg) {
@@ -33,7 +33,6 @@
 
     &__help-text {
         margin-top: 40px;
-        font-size: 1.4rem;
     }
 
     &__heading {
@@ -109,6 +108,7 @@
 
         @include abstracts.screen(md) {
             width: 50%;
+            font-size: 1.6rem;
         }
 
         @include abstracts.screen(sm) {
@@ -128,10 +128,6 @@
         }
     }
 
-    &__copyright {
-        font-size: 1.4rem;
-    }
-
     &__socials {
         display: flex;
         align-items: center;
@@ -148,6 +144,11 @@
         filter: grayscale(50%);
         transition: translate, filter;
         transition-duration: 0.3s;
+
+        @include abstracts.screen(sm) {
+            width: 42px;
+            height: 42px;
+        }
 
         &--facebook {
             background: #0866ff;
@@ -179,5 +180,9 @@
         width: 16px;
         filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
             contrast(103%);
+
+        @include abstracts.screen(sm) {
+            width: 18px;
+        }
     }
 }
