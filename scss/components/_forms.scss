@@ -23,7 +23,7 @@ $error-color: #ed4337;
     &__group:has(:invalid):has(&__input:not(:placeholder-shown)):has(&__input:not(:focus-within)) {
         .form__text-input {
             border-color: $error-color;
-            background: rgba($color:  $error-color, $alpha: 0.1);
+            background: rgba($color: $error-color, $alpha: 0.1);
         }
         .form__error,
         .form__input-icon-error {
@@ -79,7 +79,7 @@ $error-color: #ed4337;
         font-size: 1.4rem;
         font-weight: 500;
         margin-top: 10px;
-        color:  $error-color;
+        color: $error-color;
         display: none;
     }
 
@@ -141,6 +141,75 @@ $error-color: #ed4337;
             left: 2px;
             top: 4px;
             rotate: -45deg;
+        }
+    }
+
+    &__label {
+        display: block;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 145.455%;
+
+        &--small {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            line-height: 142.857%;
+        }
+    }
+
+    &__select-wrap {
+        display: flex;
+        align-items: center;
+        height: 45px;
+        border-radius: 6px;
+        border: 1px solid #d2d1d6;
+    }
+
+    &__select {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 14px;
+        min-width: var(--width, 108px);
+        height: calc(100% - 10px);
+
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+
+        @include abstracts.screen(xl) {
+            flex: 1;
+        }
+    }
+
+    &__select + &__select {
+        border-left: 1px solid #d2d1d6;
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+
+        @include abstracts.screen(sm) {
+            gap: 10px;
+        }
+    }
+
+    &__tag {
+        padding: 6px 12px;
+        color: #9e9da8;
+        border-radius: 6px;
+        background: var(--form-tag-bg);
+
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+        transition: color 0.2s;
+
+        &:hover {
+            color: var(--text-color);
         }
     }
 }
