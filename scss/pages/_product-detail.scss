@@ -80,7 +80,7 @@
         height: 65px;
         object-fit: contain;
         border-radius: 8px;
-        border: 1.5px solid #9e9da8;
+        border: 1px solid #9e9da8;
         opacity: 0.8;
         transition: opacity, border-color;
         transition-duration: 0.4s;
@@ -244,7 +244,7 @@
 
         @include abstracts.screen(md) {
             font-size: 1.8rem;
-            padding: 8px 20px
+            padding: 8px 20px;
         }
 
         &:not(&--current) {

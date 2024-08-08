@@ -66,21 +66,21 @@
     }
 
     a {
-        color: #0071DC;
+        color: #0071dc;
         text-decoration: underline;
     }
 
     blockquote {
-        background: rgba($color: #77DAE6, $alpha: 0.1);
+        background: rgba($color: #77dae6, $alpha: 0.1);
         padding: 20px;
-        border-left: 3px solid #77DAE6;
+        border-left: 3px solid #77dae6;
         p {
             margin: 0;
         }
     }
 
     hr {
-        height: 1.5px;
+        height: 1px;
         margin: 40px 0;
         border: none;
         background: var(--text-content-hr-bg);
