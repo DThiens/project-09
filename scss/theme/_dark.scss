@@ -64,7 +64,7 @@ html.dark {
     --form-placeholder-color: #b9babe;
     --form-select-dialog-shadow: rgba($color: #000000, $alpha: 0.15);
     --form-select-dialog-bg: #2f3441;
-    --form-option-hover-bg: #292E39;
+    --form-option-hover-bg: #292e39;
 
     // Product-detail
     --product-detail-bg: #292e39;
@@ -96,14 +96,28 @@ html.dark {
     --text-content-hr-bg: #3e4043;
 
     // Checkout
-    --checkout-breadcrumbs-bg: #171C28;
-    --checkout-cart-info-bg: #171C28;
-    --checkout-cart-info-shadow: rgba(23, 28, 40, 0.20);
-    --checkout-border-color: #292E39;
-    --checkout-gift-shadow: rgba(23, 28, 40, 0.20);
-    --checkout-payment-item-bg:#292E39;
+    --checkout-breadcrumbs-bg: #171c28;
+    --checkout-cart-info-bg: #171c28;
+    --checkout-cart-info-shadow: rgba(23, 28, 40, 0.2);
+    --checkout-border-color: #292e39;
+    --checkout-gift-shadow: rgba(23, 28, 40, 0.2);
+    --checkout-payment-item-bg: #292e39;
 
     // Dialog
     --dialog-bg: #2f3441;
-    --dialog-shadow:rgba(23, 28, 40, 0.4);
+    --dialog-shadow: rgba(23, 28, 40, 0.4);
+
+    // Profile
+    --profile-sidebar-bg: #171C28;
+    --profile-sidebar-shadow: rgba(23, 28, 40, 0.20);
+    --profile-sidebar-link-hover: #2f3441;
+
+    
+    // Account info
+    --account-info-bg: #292E39;
+    --account-info-icon-bg: #171C28;
+
+    
+    // Separate
+    --separate-color:#292E39;
 }
